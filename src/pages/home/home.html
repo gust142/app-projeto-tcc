@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <!-- <p *ngFor="let item of denuncias | async"> {{item|json}}</p> -->
+  <!-- <ul>
+      <li *ngFor="let item of denuncias | async">
+        {{item.uid}}
+      </li>
+    </ul> -->
+  
+  <div #heatmap id="map"></div>
+  <ion-fab bottom center>
+      <button ion-fab color="primary" (click)="trocar_operacao()"> <ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>
